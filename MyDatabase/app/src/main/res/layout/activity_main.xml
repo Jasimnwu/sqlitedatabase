@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/idtxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="id"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_below="@+id/idtxt"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:padding="15dp"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="firstname"
+        android:inputType="textPersonName"
+        android:text=""
+        android:padding="15dp"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/surename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/firstname"
+        android:inputType="textPersonName"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"
+        android:text=""
+        android:hint="Surename"/>
+
+    <EditText
+        android:id="@+id/marks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/surename"
+        android:inputType="textPersonName"
+        android:text=""
+        android:hint="Marks"
+        android:padding="15dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_below="@id/marks"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/alldata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All text"
+        android:layout_below="@id/button"/>
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@id/alldata"/>
+
+</RelativeLayout>
